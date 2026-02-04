@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Prelims — Professional HTML/CSS Site</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header class="site-header">
+		<div class="container header-inner">
+			<a class="logo" href="index.html">Prelims</a>
+
+			<nav id="site-navigation" class="nav" role="navigation" aria-label="Main navigation">
+				<a href="index.html" aria-current="page">Home</a>
+				<a href="about.html">About</a>
+				<a href="contact.html">Contact</a>
+				<a href="cart.html" class="cart-link" aria-label="View cart">Cart</a>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section class="hero">
+			<div class="container hero-grid">
+				<div>
+					<h1>Beautiful websites, crafted with care</h1>
+					<p class="muted">Design-forward, responsive pages built using semantic HTML and modern CSS. Lightweight, accessible, and easy to customize.</p>
+					<p>
+						<a class="btn btn-ghost" href="about.html">Our Work</a>
+						<a class="btn btn-secondary" href="contact.html" style="margin-left:.6rem;">Contact</a>
+					</p>
+				</div>
+
+				<aside class="card">
+					<h3>Quick facts</h3>
+					<ul>
+						<li><strong>Fast:</strong> Minimal assets, optimized layout</li>
+						<li><strong>Responsive:</strong> Works across devices</li>
+						<li><strong>Accessible:</strong> Semantic markup & clear contrast</li>
+					</ul>
+				</aside>
+			</div>
+		</section>
+
+		<section class="features container">
+			<h2 style="margin-bottom:.8rem">Services</h2>
+			<div class="grid features-grid">
+				<article>
+					<div class="feature-card">
+						<h3>Design System</h3>
+						<p class="muted">Color, spacing, and typography chosen for clarity and hierarchy.</p>
+					</div>
+				</article>
+				<article>
+					<div class="feature-card">
+						<h3>Responsive Layouts</h3>
+						<p class="muted">Fluid grids and components that adapt to any screen size.</p>
+					</div>
+				</article>
+				<article>
+					<div class="feature-card">
+						<h3>Optimized Content</h3>
+						<p class="muted">Readable content structure that helps users and search engines.</p>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<section class="container">
+			<h2 style="margin-bottom:.8rem">Books</h2>
+			<div class="products">
+				<div class="product card">
+					<a class="product-link" href="book-001.html"><img src="https://picsum.photos/seed/book1/400/260" alt="The Art of Reading"></a>
+					<h3><a class="product-link" href="book-001.html">The Art of Reading</a></h3>
+					<p class="muted">by L. Reader</p>
+					<p class="price">₱14.99</p>
+					<p><a class="btn btn-primary btn-icon btn-sm" href="book-001.html"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 6h15l-1.5 9h-12L3 4H2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 20a1 1 0 100-2 1 1 0 000 2zm8 0a1 1 0 100-2 1 1 0 000 2z" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>View / Buy</a></p>
+				</div>
+
+				<div class="product card">
+					<a class="product-link" href="book-002.html"><img src="https://picsum.photos/seed/book2/400/260" alt="Design Patterns"></a>
+					<h3><a class="product-link" href="book-002.html">Design Patterns</a></h3>
+					<p class="muted">by A. Architect</p>
+					<p class="price">₱22.50</p>
+					<p><a class="btn btn-primary btn-icon btn-sm" href="book-002.html"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 6h15l-1.5 9h-12L3 4H2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 20a1 1 0 100-2 1 1 0 000 2zm8 0a1 1 0 100-2 1 1 0 000 2z" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>View / Buy</a></p>
+				</div>
+
+				<div class="product card">
+					<a class="product-link" href="book-003.html"><img src="https://picsum.photos/seed/book3/400/260" alt="JavaScript Fundamentals"></a>
+					<h3><a class="product-link" href="book-003.html">JavaScript Fundamentals</a></h3>
+					<p class="muted">by S. Coder</p>
+					<p class="price">₱18.00</p>
+					<p><a class="btn btn-primary btn-icon btn-sm" href="book-003.html"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 6h15l-1.5 9h-12L3 4H2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 20a1 1 0 100-2 1 1 0 000 2zm8 0a1 1 0 100-2 1 1 0 000 2z" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>View / Buy</a></p>
+				</div>
+
+				<div class="product card">
+					<a class="product-link" href="book-004.html"><img src="https://picsum.photos/seed/book4/400/260" alt="Designing Interfaces"></a>
+					<h3><a class="product-link" href="book-004.html">Designing Interfaces</a></h3>
+					<p class="muted">by U. Designer</p>
+					<p class="price">₱16.75</p>
+					<p><a class="btn btn-primary btn-icon btn-sm" href="book-004.html"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 6h15l-1.5 9h-12L3 4H2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 20a1 1 0 100-2 1 1 0 000 2zm8 0a1 1 0 100-2 1 1 0 000 2z" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>View / Buy</a></p>
+				</div>
+			</div>
+		</section>
+
+		<section class="container">
+			<h2 style="margin-bottom:.8rem">Testimonials</h2>
+			<div class="testimonials">
+				<div class="testimonial"><p>“Excellent attention to detail and fast turnaround.”</p><p class="muted">— Alex M.</p></div>
+				<div class="testimonial"><p>“Clean, maintainable code and beautiful UI.”</p><p class="muted">— Priya S.</p></div>
+			</div>
+		</section>
+
+	</main>
+
+	<footer class="site-footer">
+		<div class="container">
+			<p>© Prelims • Built with HTML & CSS</p>
+		</div>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cart — Prelims Bookstore</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Prelims</a>
+      <nav class="nav" role="navigation" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html" aria-current="page">Cart</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container">
+      <h1>Your Cart</h1>
+
+      <div class="card">
+        <div class="cart-empty" id="cart-default">
+          <p>Your cart is empty.</p>
+          <p><a class="btn btn-secondary" href="index.html">← Continue shopping</a></p>
+        </div>
+
+        <div id="add-book-001" class="cart-item" aria-hidden="true">
+          <h2>Item added</h2>
+          <div class="cart-row">
+            <img src="https://picsum.photos/seed/book1/160/100" alt="The Art of Reading">
+            <div>
+              <h3>The Art of Reading</h3>
+              <p class="muted">by L. Reader</p>
+            </div>
+            <div class="cart-price">₱14.99</div>
+          </div>
+          <p class="muted">Note: This is a static demo cart implemented with HTML anchors and CSS (:target). To add this book, use the product page <a href="book-001.html">Buy</a>.</p>
+          <p><a class="btn btn-secondary" href="index.html">← Continue shopping</a> • <a class="btn btn-primary btn-lg btn-icon" href="#checkout" role="button" aria-label="Proceed to checkout"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M3 12h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 5l7 7-7 7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Proceed to checkout</a></p>
+        </div>
+
+        <div id="add-book-002" class="cart-item" aria-hidden="true">
+          <h2>Item added</h2>
+          <div class="cart-row">
+            <img src="https://picsum.photos/seed/book2/160/100" alt="Design Patterns">
+            <div>
+              <h3>Design Patterns</h3>
+              <p class="muted">by A. Architect</p>
+            </div>
+            <div class="cart-price">₱22.50</div>
+          </div>
+          <p class="muted">Static demo cart entry.</p>
+          <p><a class="btn btn-secondary" href="index.html">← Continue shopping</a> • <a class="btn btn-primary btn-lg btn-icon" href="#checkout" role="button" aria-label="Proceed to checkout"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M3 12h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 5l7 7-7 7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Proceed to checkout</a></p>
+        </div>
+
+        <div id="add-book-003" class="cart-item" aria-hidden="true">
+          <h2>Item added</h2>
+          <div class="cart-row">
+            <img src="https://picsum.photos/seed/book3/160/100" alt="JavaScript Fundamentals">
+            <div>
+              <h3>JavaScript Fundamentals</h3>
+              <p class="muted">by S. Coder</p>
+            </div>
+            <div class="cart-price">₱18.00</div>
+          </div>
+          <p class="muted">Static demo cart entry.</p>
+          <p><a class="btn btn-secondary" href="index.html">← Continue shopping</a> • <a class="btn btn-primary btn-lg btn-icon" href="#checkout" role="button" aria-label="Proceed to checkout"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M3 12h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 5l7 7-7 7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Proceed to checkout</a></p>
+        </div>
+
+        <div id="add-book-004" class="cart-item" aria-hidden="true">
+          <h2>Item added</h2>
+          <div class="cart-row">
+            <img src="https://picsum.photos/seed/book4/160/100" alt="Designing Interfaces">
+            <div>
+              <h3>Designing Interfaces</h3>
+              <p class="muted">by U. Designer</p>
+            </div>
+            <div class="cart-price">₱16.75</div>
+          </div>
+          <p class="muted">Static demo cart entry.</p>
+          <p><a class="btn btn-secondary" href="index.html">← Continue shopping</a> • <a class="btn btn-primary btn-lg btn-icon" href="#checkout" role="button" aria-label="Proceed to checkout"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M3 12h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 5l7 7-7 7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Proceed to checkout</a></p>
+        </div>
+
+      </div>
+
+      <div id="checkout" class="card" style="margin-top:1rem">
+        <h2>Checkout</h2>
+        <p class="muted">This demo has no backend. The checkout form is illustrative only.</p>
+        <form action="#" method="post">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required>
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required>
+
+          <p style="margin-top:.8rem"><button class="btn btn-primary" type="submit">Place order (demo)</button></p>
+        </form>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© Prelims Bookstore • Demo</p>
+    </div>
+  </footer>
+</body>
+</html>
